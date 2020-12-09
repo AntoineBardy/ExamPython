@@ -5,7 +5,7 @@ from colorama import Fore, Back, Style
 
 listeMot = [ "examen" , "python" , "bouche" , "cheval" , "purger" , "souris", "france", "bateau" , "animal" , "bronze" ]
 mot = random.choice(listeMot)
-print (Mot)
+print (mot)
 
 for Tentative in range (0,8):
 	JoueurTry = input("Saisir un mot de 6 lettre uniquement : ")
@@ -19,12 +19,13 @@ for Tentative in range (0,8):
 					print(Fore.YELLOW + JoueurTry[j])
 					couleur = True
 			if couleur : False
-			    print(Fore.BLUE + JoueurTry[j])
-				
-	if mot == JoueurTry
-	print ("Bravo, vous avez trouvez le mot !")
+			print(Fore.BLUE + JoueurTry[j])
+			
+	print(Style.RESET_ALL)
+	if mot == JoueurTry:
+	    print("Bravo, vous avez trouvez le mot !")
 
-	elif mot != JoueurTry
-	print ("Vous avez perdu le mot était", mot)
-
+	elif mot != JoueurTry:
+	    print("Vous avez perdu le mot était", mot)
+	
 input()
