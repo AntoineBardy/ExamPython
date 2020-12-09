@@ -14,4 +14,6 @@ for Tentative in range (0,8):
 			print(Fore.RED + , JoueurTry)
 		else : 
 			couleur : False
-			
+			for j in range (0,6):
+				if mot[i] == JoueurTry[j]
+					print(Fore.YELLOW + , JoueurTry)
