@@ -1,33 +1,28 @@
+import random
 from colorama import init
 init()
 from colorama import Fore, Back, Style
 
-mot1 = "bronze"
-mot2 = "bateau"
-mot3 = "python"
-mot4 = "france"
-mot5 = "bouche"
-mot6 = "examen"
-mot7 = "purger"
-mot8 = "souris"
-mot9 = "cheval"
-mot10 = "animal"
-
-mots = [mot1 or mot2 or mot3 or mot4 or mot5 or mot6 or mot7 or mot8 or mot9 or mot10]
-tentatives = 8 
+listeMot = [ "examen" , "python" , "bouche" , "cheval" , "purger" , "souris", "france", "bateau" , "animal" , "bronze" ]
+Mot = random.choice(listeMot)
+print (Mot)
 
 def chercheLettre (lettre, mot):
-	for i in range (len(mots));
-		if lettre == mots[i];
-		return i
+	for i in range (len(mots)):
+		if lettre == mots[i]:
+		return
 
 def oneLettre (lettre, indiceLettre, mot):
 	if lettre in mot:
 		if mot[indiceLettre] == motChoisis[indiceLettre]:
-	print(Fore.RED + lettre, end=" ")
-	
-	print(Back.YELLOW + lettre)
+			print(Fore.RED + lettre, end=" ")
+			return
+		print(Fore.YELLOW + lettre, end=" ")
+		return
+	print(Fore.BLUE + lettre, end=" ")
 
 
-chercheLettre (mot1)
-input()
+def nombreDeFois (lettre, mot):
+	for i in range(len(mots)):
+		chercheLettre (lettre)
+		print ()
