@@ -11,9 +11,12 @@ for Tentative in range (0,8):
 	JoueurTry = input("Saisir un mot de 6 lettre uniquement : ")
 	for i in range (0,6):
 		if mot[i] == JoueurTry [i]
-			print(Fore.RED + , JoueurTry)
+			print(Fore.RED + , JoueurTry[i])
 		else : 
 			couleur : False
 			for j in range (0,6):
 				if mot[i] == JoueurTry[j]
-					print(Fore.YELLOW + , JoueurTry)
+					print(Fore.YELLOW + , JoueurTry[j])
+					couleur : True
+			if couleur : False
+				print (Fore.BLUE + JoueurTry[j])
